@@ -1,0 +1,79 @@
+$bg-color: $colorH;
+.dropdown-toggle {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-font-color;
+  }
+}
+
+.dropdown-menu {
+  margin-top: -1px;
+  padding: 0;
+  border-color: $brd-color;
+  border-radius: 0;
+  background-color: $bg-color;
+  &:before {
+    position: absolute;
+    top: -6px;
+    right: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid darken($brd-color, 1%);
+    border-left: 7px solid transparent;
+    content: '';
+  }
+  &:after {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $bg-color;
+    border-left: 6px solid transparent;
+    content: '';
+  }
+  @extend .likedropdown;
+}
+
+
+/* this .likedropdown class apply to the one needs to be treat as a listing in dropdown
+/* currency-dropdown is as an example
+*/
+
+ul.likedropdown {
+  >li {
+    border-color: $brd-color;
+    a {
+      padding: 15px 20px;
+      display: block;
+      color: $primary-font-color;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $brd-color;
+        background-image: none;
+        color: $active-color;
+      }
+    }
+  }
+}
+
+.dropup {
+  .dropdown-menu {
+    margin-bottom: 10px;
+    &:before {
+      top: auto;
+      bottom: -6px;
+      border-top: 7px solid darken($brd-color, 1%);
+      border-bottom: none;
+    }
+    &:after {
+      top: auto;
+      bottom: -5px;
+      border-top: 6px solid $bg-color;
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'gotham-webfont';
+  src: url('../../fonts/gotham-webfont/Gotham-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'gotham-webfont';
+  font-weight: bold;
+  src: url('../../fonts/gotham-webfont/Gotham-Bold.otf') format('opentype');
+}
+
+.body-font {
+  font-family: 'gotham-webfont', sans-serif !important;
+}
+
+.heading-font {
+  font-family: 'gotham-webfont', sans-serif !important;
+}

@@ -1,0 +1,13 @@
+.tooltip {
+  &.top-left,
+  &.top-right,
+  &.top {
+    .tooltip-arrow {
+      border-top-color: $colorJ;
+    }
+  }
+  .tooltip-inner {
+    background-color: $colorJ;
+    border-radius: 2px;
+  }
+}

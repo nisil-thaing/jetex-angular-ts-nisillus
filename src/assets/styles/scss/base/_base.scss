@@ -1,0 +1,649 @@
+html,
+body {
+  // background: $colorG !important;
+  color: $primary-font-color;
+}
+
+section {
+  &.content {
+    >section {
+      //position: relative;
+    }
+  }
+}
+
+.full-hview {
+  min-height: 100vh;
+  padding-top: 70px;
+  /* header height */
+  margin-top: -70px;
+  padding-bottom: 500px;
+  /* footer height */
+  margin-bottom: -500px;
+}
+
+.small-wrap {
+  max-width: 700px;
+  width: 100%;
+}
+
+.base-style {
+  h3,
+  h4 {
+    font-weight: bold;
+    padding-bottom: 25px;
+    line-height: 25px;
+    color: $active-color;
+  }
+  h3 {
+    padding-top: 70px;
+  }
+  p {
+    padding-bottom: 25px;
+  }
+  ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.error-msg {
+  color: $error-color;
+}
+
+.success-msg {
+  color: $colorC;
+}
+
+.pady5t5b {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pad15 {
+  padding: 15px;
+}
+
+.pady15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pady15bot {
+  padding-bottom: 15px;
+}
+
+.pady30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pady10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pady10top {
+  padding-top: 10px;
+}
+
+.pady5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pady5top {
+  padding-top: 5px;
+}
+
+.margy5top {
+  margin-top: 5px;
+}
+
+.pady30top {
+  padding-top: 30px;
+}
+
+.pady30bot {
+  padding-bottom: 30px;
+}
+
+.pady50top {
+  padding-top: 50px;
+}
+
+.whiteBackground {
+  background-color: white;
+}
+
+//color
+.colorA {
+  color: $colorA !important;
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .height85 {
+    height: 85px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pady150topd {
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .magy50top {
+    margin-top: 50px;
+  }
+  .pady150topd {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pady30topm {
+    padding-top: 30px;
+  }
+  .pady25minusmobile {
+    padding-bottom: 0px !important;
+  }
+  .magy50top {
+    margin-top: -60px;
+  }
+  .pady150topd {}
+}
+
+.btn {
+  border-radius: $btn-border-radius;
+  @include transition(all ease 0.1s);
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.active-color {
+  color: $active-color;
+}
+
+.small-txt {
+  font-size: $small-paragraph-font-size;
+}
+
+.medium-txt {
+  font-size: $medium-paragraph-font-size;
+}
+
+.primary-button {
+  background: $btn-primary-bg-color;
+  color: $btn-primary-font-color;
+  font-weight: $btn-primary-font-weight;
+  border: $btn-border-width solid $btn-border-primary-color;
+  * {
+    color: $btn-primary-font-color;
+    font-weight: $btn-primary-font-weight;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $btn-hover-primary-font-color;
+    background-color: $btn-hover-primary-bg-color;
+    border-color: $btn-hover-border-primary-color;
+  }
+}
+
+.secondary-button {
+  background: $btn-secondary-bg-color;
+  color: $btn-secondary-font-color;
+  font-weight: $btn-secondary-font-weight;
+  border: $btn-border-width solid $btn-border-secondary-color;
+  * {
+    color: $btn-secondary-font-color;
+    font-weight: $btn-secondary-font-weight;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $btn-hover-secondary-font-color;
+    background-color: $btn-hover-secondary-bg-color;
+    border-color: $btn-hover-border-secondary-color;
+  }
+}
+
+.third-button {
+  @extend .secondary-button;
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: transparent;
+  }
+}
+
+.brd-bt {
+  border-bottom: 1px solid $brd-color;
+}
+
+.page-wrap {
+  // min-height: 100vh;
+  .page-title {
+    height: 52px;
+    line-height: 52px;
+    h2,
+    h4 {
+      line-height: inherit;
+      text-indent: 15px;
+    }
+    @media (min-width:768px) {
+      height: 82px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.large-button {
+  height: $large-button-height;
+}
+
+.medium-button {
+  height: $medium-button-height;
+}
+
+.small-button {
+  height: $small-button-height;
+}
+
+.ctn-listing-page {
+  background-color: $colorG;
+}
+
+.checked {
+  * {
+    color: $active-color;
+  }
+}
+
+.hotel {
+  // li {
+  //     &.item-cheapest,
+  //     &.item-guest-rating {
+  //         * {
+  //             &:hover {
+  //                 color: $colorA;
+  //             }
+  //         }
+  //     }
+  // }
+  // .active {
+  //     * {
+  //         font-weight: $tab-highlight-font-weight;
+  //         color: $tab-highlight-font-color;
+  //         border-bottom: $tab-highlight-height solid $tab-highlight-font-color;
+  //     }
+  // }
+  background: $colorG;
+  color: $colorD;
+  .hotel-details-wrapper {
+    .hotel_card_layout-detail {
+      background: $colorH;
+      .card-cover-wrapper {
+        .card_cover_info {
+          .info__star_review {
+            color: $colorA;
+          }
+        }
+        .card_cover_img {
+          background-color: $image-container-bg-color;
+          .overrall-reviews-desc {
+            background: rgba(0, 0, 0, 0.8);
+            * {
+              color: $colorH;
+            }
+          }
+        }
+      }
+      .hotel-description-wrapper {
+        background: $colorG;
+        .card_option_view {
+          background: $colorG; // border-top: 1px solid $colorF;
+          // border-bottom: 1px solid $colorF;
+          .list-inline {
+            border-color: $colorF;
+          }
+        }
+        .ctn-card-layout-tab {
+          .card-layout {
+            //border-left: $card-border-width solid $card-border-color;
+            //border-right: $card-border-width solid $card-border-color;
+          }
+        }
+      }
+    }
+    .hotel-detail-descriptions {
+      .deals,
+      .reviews,
+      .map,
+      .amenities {
+        background: $colorH;
+      }
+      .deals {
+        .map-image {
+          background-color: $image-container-bg-color;
+        }
+        .description-wrapper {
+          border-bottom: $card-border-width solid $card-border-color;
+        }
+      }
+      .reviews {
+        .rate {
+          h1,
+          h3 {
+            color: $colorC;
+          }
+        }
+        .item-reviews {
+          @media (max-width: 767px) {
+            border-top: 1px solid $colorI;
+          }
+          .item {
+            .rate-bar {
+              background: $colorC;
+            }
+          }
+        }
+      }
+      .map {}
+    }
+  } // #hotel-lists, #flight-lists {
+  // .hotel-search-filter {
+  // background: $tab-content-bg-color;
+  // border-bottom: 1px solid $colorF;
+  // .hotel_contain-bar {
+  // ul {
+  //     border: 0px solid $colorF;
+  //     li {
+  //         &.item {
+  //             &.filter-menu {
+  //                 border-right: $tab-border-width solid $tab-border-color;
+  //             }
+  //             &.item-cheapest,
+  //             &.item-guest-rating {
+  //                 &:hover {
+  //                     color: $colorA;
+  //                 }
+  //             }
+  //         }
+  //     }
+  // }
+  // }
+  // }
+  // }
+}
+
+.wp-filter-sidebar {
+  background: $colorH;
+  border-color: $card-desktop-border-color; //border-right: $card-border-width solid $card-border-color;
+  .filters-menu-inner {
+    .list-inner {
+      border-bottom: $card-border-width solid $card-border-color;
+    }
+    .filter-slider-wrapper {
+      // rzslider {
+      //     .rz-pointer {
+      //         background-color: $ranger-slider-highlight-color;
+      //     }
+      //     .rz-bar {
+      //         &.rz-selection {
+      //             background: $ranger-slider-highlight-color;
+      //         }
+      //     }
+      // }
+    }
+    .option-section {
+      &.stop-section {
+        border-color: $colorF;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .filters-menu-inner {
+      .filters-menu-wrapper {
+        background: $colorH;
+      }
+    }
+  }
+}
+
+.ctn-flight-listing {
+  .wp-filter-sidebar {
+    .show-all-airline {
+      span {
+        color: $colorA;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.airports-arrival-filter,
+.airports-departure-filter {
+  border-bottom: 0px solid !important;
+  padding-bottom: 0px !important;
+}
+
+.hotel-search-info {
+  .hotel_contain-bar {
+    ul {
+      li {
+        border-color: $colorB !important;
+      }
+    }
+  }
+}
+
+.card-layout {
+  .card_img {
+    background-color: $image-container-bg-color;
+  }
+  .card_info {
+    .card-info-left {
+      .info__title {
+        span * {
+          color: $colorD;
+        }
+      }
+    }
+    .card-info-right {
+      .info__desc_price {
+        &.sale-price {
+          * {
+            color: $colorJ;
+          }
+        }
+        &.discount-price {
+          * {
+            color: $colorA;
+          }
+        }
+      }
+    }
+    .info__star_review {
+      color: $colorA;
+    }
+    .card-rating-sub {
+      color: $colorC;
+    }
+  }
+}
+
+.pagination-wrapper {
+  .pagination {
+    >.active {
+      a {
+        background-color: $pagination-highlight-btn-bg-color;
+        color: $pagination-highlight-btn-font-color; // &:hover,
+        // &:focus {
+        //     background-color: $pagination-highlight-btn-bg-color;
+        // }
+      }
+    }
+    >.disabled {
+      a {
+        background-color: $pagination-btn-bg-color;
+      }
+    }
+    >li {
+      a {
+        background: $pagination-btn-bg-color;
+        border-width: $pagination-btn-border-width;
+        color: $pagination-btn-font-color;
+        &:hover,
+        &:focus {
+          background-color: $pagination-highlight-btn-bg-color;
+          color: $pagination-highlight-btn-font-color;
+        }
+      }
+    }
+  }
+}
+
+.card-layout {
+  background: $card-info-bg-color;
+  border: $card-border-width solid $card-border-color;
+  &:hover {
+    @media (min-width: 992px) {
+      border-color: $colorA;
+      .card_info {
+        .card-info-left {
+          .info__title * {
+            color: $colorA;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sortby-bar {
+  background: $tab-content-bg-color;
+  border-bottom: 1px solid $colorF;
+  .sortby-contain-bar {
+    li {
+      &.item-cheapest,
+      &.item-guest-rating {
+        * {
+          &:hover {
+            color: $colorA;
+          }
+        }
+      }
+    }
+    .active {
+      * {
+        font-weight: $tab-highlight-font-weight;
+        color: $tab-highlight-font-color;
+        border-bottom: $tab-highlight-height solid $tab-highlight-font-color;
+      }
+    }
+    ul {
+      border: 0px solid $colorF;
+      li {
+        &.item {
+          &.filter-menu {
+            border-right: $tab-border-width solid $tab-border-color;
+          }
+          &.item-cheapest,
+          &.item-guest-rating {
+            &:hover {
+              color: $colorA;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.flight-item {
+  background: $colorH;
+  .f-info {
+    .start-time,
+    .end-time {
+      .title {
+        color: $colorC;
+      }
+    }
+  }
+  .flight-summary {
+    .flight-price {
+      .price {
+        color: $colorA;
+      }
+    }
+  }
+  .flight-details {
+    .flight-detail {
+      border-color: $colorF;
+      .flight-title {
+        background: $colorG;
+        .title {
+          color: $colorA;
+          span:first-child {
+            color: $colorA;
+          }
+        }
+      }
+      .stopPlace,
+      .destinationPlace {
+        .airline-info {
+          >div {
+            >div {
+              * {
+                color: $colorE;
+              }
+            }
+          }
+        }
+      }
+      .stopPlace {
+        .stop-time-notice {
+          .stop-info {
+            border-color: $colorJ;
+            background: $colorH;
+            .stop-icon,
+            .title {
+              * {
+                color: $colorJ;
+              }
+            }
+          }
+          .separate-bar {
+            background: $colorF;
+          }
+        }
+      }
+    }
+  }
+}
+
+rzslider {
+  .rz-pointer {
+    background-color: $ranger-slider-highlight-color;
+  }
+  .rz-bar {
+    &.rz-selection {
+      background: $ranger-slider-highlight-color;
+    }
+  }
+}

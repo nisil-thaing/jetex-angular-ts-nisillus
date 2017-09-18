@@ -1,0 +1,92 @@
+$ch-color: #424242;
+$ch-selected-color: $active-color;
+$ch-disabled-color: #787878;
+.checkbox,
+.radio {
+  position: relative;
+  padding-left: 20px;
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    /* IE<9 graceful degradation */
+    z-index: 1;
+  }
+  label {
+    display: inline-block;
+    line-height: 24px;
+    /* ::after height+borders */
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+    cursor: pointer;
+    user-select: none;
+    /* iOS =< 6 bug fix*/
+    color: $ch-color;
+    &::after,
+    &::before {
+      font-family: 'JetExplorer';
+      font-size: 2em;
+      width: 20px;
+      height: 20px;
+      margin-left: -25px;
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "\e906";
+      background-color: white;
+      cursor: pointer;
+    }
+    &::before {
+      position: absolute;
+      content: "\e907";
+      opacity: 0;
+      z-index: 1;
+    }
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+  input[type="checkbox"]:checked+label,
+  input[type="radio"]:checked+label {
+    color: $ch-selected-color;
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      opacity: 1;
+    }
+  }
+  input[type="checkbox"]:disabled+label,
+  input[type="radio"]:disabled+label {
+    color: $ch-disabled-color;
+    cursor: default;
+    &::after {
+      opacity: 0.5;
+      background-color: #ffffff;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.radio {
+  label {
+    &::after {
+      content: "\e922";
+    }
+    &::before {
+      content: "\e923";
+    }
+  }
+}
+
+.checkbox+.checkbox,
+.radio+.radio {
+  margin-top: 0;
+}

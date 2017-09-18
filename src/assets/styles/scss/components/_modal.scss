@@ -1,0 +1,35 @@
+.modal {
+  &.in {
+    padding-right: 0 !important;
+  }
+  .modal-dialog {
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+    .modal-content {
+      border-radius: 0;
+      border: none;
+      @include box-shadow(0, 0, 0, 0);
+    }
+  }
+  .modal-header {
+    background-color: $active-color;
+    * {
+      color: $colorH;
+    }
+    .modal-title {
+      line-height: 40px;
+    }
+  }
+  .modal-body {
+    @media (min-width: 768px) {
+      padding: 30px;
+    }
+    .error-notice {
+      color: $colorJ;
+    }
+  }
+  .modal-close.jetex-cross {
+    line-height: inherit;
+  }
+}

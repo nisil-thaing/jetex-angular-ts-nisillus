@@ -1,0 +1,107 @@
+// Base colors
+$colorA: #674290;
+$colorB: #523775;
+$colorC: #47C695;
+$colorD: #515151;
+$colorE: #999999;
+$colorF: #E6E6E6;
+$colorG: #F6F6F6;
+$colorH: #FFFFFF;
+$colorI: #EFEFEF;
+$colorJ: #E8615B;
+$colorK: #e8615b;
+
+$primary-font-color: $colorD;
+
+
+
+// Hover/Active percent
+$percent: 10%;
+
+// Active color style variable
+$active-color: $colorA;
+
+// Background image container
+$image-container-bg-color: $colorF;
+
+// Button styles variables
+
+$btn-primary-bg-color: $colorC;
+$btn-hover-primary-bg-color: lighten($btn-primary-bg-color, $percent);
+$btn-primary-font-color: $colorH;
+$btn-hover-primary-font-color: lighten($btn-primary-font-color, $percent);
+$btn-border-primary-color: $colorC;
+$btn-hover-border-primary-color: lighten($btn-border-primary-color, $percent);
+$btn-primary-font-weight: normal;
+
+$btn-secondary-bg-color: transparent;
+$btn-hover-secondary-bg-color: lighten($btn-secondary-bg-color, $percent);
+$btn-secondary-font-color: $colorC;
+$btn-hover-secondary-font-color: lighten($btn-secondary-font-color, $percent);
+$btn-border-secondary-color: $colorC;
+$btn-hover-border-secondary-color: lighten($btn-border-secondary-color, $percent);
+$btn-secondary-font-weight: normal;
+
+$btn-border-width: 1px;
+$btn-border-radius: 0px;
+
+// Text input search size
+
+$input-search-size: 24px;
+$input-placehoder-size: 16px;
+
+// Text field styles variables
+$input-large-size: 52px;
+$input-medium-size: 46px;
+
+$input-border-color: $colorE;
+$input-border-radius: 0px;
+$input-border-width: 1px;
+
+// Card layout styles on mobile variables
+$card-mobile-border-color: $colorF;
+$card-mobile-box-distance: 10px;
+$card-mobile-info-padding: 10px;
+
+// Card layout styles on desktop variables
+$card-desktop-border-color: $colorF;
+$card-desktop-box-distance: 15px;
+$card-desktop-info-padding: 15px;
+
+$card-border-width: 1px;
+$card-border-color: $colorF;
+$card-info-bg-color: $colorH;
+
+// Tabs content styles variables
+$tab-content-bg-color: $colorG;
+$tab-highlight-height: 3px;
+$tab-border-color: $colorF;
+$tab-border-width: 1px;
+$tab-highlight-font-weight: bold;
+$tab-highlight-font-color: $active-color;
+
+// Ranger slider styles variables
+$ranger-slider-handle-bubble-size: 16px;
+$ranger-line-weight: 2px;
+$ranger-slider-highlight-color: $active-color;
+
+// Pagination styles variable
+$pagination-btn-bg-color: transparent;
+$pagination-highlight-btn-bg-color: $active-color;
+$pagination-btn-font-color: $colorD;
+$pagination-highlight-btn-font-color: $colorH;
+$pagination-btn-border-width: 0px;
+
+// Font size variables
+$large-paragraph-font-size:18px;
+$paragraph-font-size: 16px;
+$medium-paragraph-font-size: 14px;
+$small-paragraph-font-size: 12px;
+
+// button-height-size variable
+$large-button-height: 44px;
+$medium-button-height: 32px;
+$small-button-height: 28px;
+
+$error-color: $colorK;
+$brd-color: $colorG;

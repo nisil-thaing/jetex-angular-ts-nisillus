@@ -1,0 +1,75 @@
+* {
+  @extend .body-font;
+}
+
+a {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $active-color;
+  }
+  &.underline {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+  /*@media (max-width: 767px) {
+      font-size: 12px;
+  }*/
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.large-paragraph {
+  font-size: $large-paragraph-font-size;
+}
+
+.paragraph {
+  font-size: $paragraph-font-size;
+}
+
+.medium-paragraph {
+  font-size: $medium-paragraph-font-size;
+}
+
+.small-paragraph {
+  font-size: $small-paragraph-font-size;
+}

@@ -1,0 +1,26 @@
+.carousel-inner {
+  > .item {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.carousel-control {
+  height: calc(100% - 44px);
+  > sspan {
+    position: absolute;
+    color: $colorH;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.left {
+    > span {
+      left: 0;
+    }
+  }
+  &.right {
+    > span {
+      right: 0;
+    }
+  }
+}
