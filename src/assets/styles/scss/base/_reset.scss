@@ -2,6 +2,23 @@
   outline: none !important;
 }
 
+.navbar {
+  > .container, >.container-fluid {
+    display: block;
+  }
+}
+
+.container-fluid, .container {
+  > .navbar-collapse, > .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none;
+}
+
 input {
   -webkit-appearance: none;
   -moz-appearance: none;

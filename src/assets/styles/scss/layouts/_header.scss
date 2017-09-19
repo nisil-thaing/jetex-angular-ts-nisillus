@@ -1,12 +1,13 @@
 header.navbar {
   background: $colorB;
+  padding: 0;
   border: none;
   .navbar-toggle {
-    // margin: 18px;
     color: $colorH;
   }
   .navbar-brand {
     color: $colorH;
+    padding: 15px 15px;
   }
   .menu-item {
     color: $colorH;

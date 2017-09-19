@@ -21,7 +21,8 @@
       "styles": [
         "../node_modules/bootstrap/scss/bootstrap.scss",
         "../node_modules/animate.css/animate.min.css",
-        "styles.css"
+        "assets/vendors/iconset/JetExplorer/style.css",
+        "assets/styles/scss/index.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

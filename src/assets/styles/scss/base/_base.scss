@@ -6,7 +6,7 @@ body {
 
 section {
   &.content {
-    >section {
+    > section {
       //position: relative;
     }
   }
@@ -264,9 +264,9 @@ section {
   height: $small-button-height;
 }
 
-.ctn-listing-page {
+/* .ctn-listing-page {
   background-color: $colorG;
-}
+} */
 
 .checked {
   * {
@@ -274,7 +274,7 @@ section {
   }
 }
 
-.hotel {
+/* .hotel {
   // li {
   //     &.item-cheapest,
   //     &.item-guest-rating {
@@ -647,3 +647,4 @@ rzslider {
     }
   }
 }
+ */

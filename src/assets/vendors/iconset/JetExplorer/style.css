@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'JetExplorer';
+  /* src:  url('fonts/JetExplorer.eot');
+  src:  url('fonts/JetExplorer.eot') format('embedded-opentype'),
+    url('fonts/JetExplorer.ttf') format('truetype'),
+    url('fonts/JetExplorer.woff') format('woff'),
+    url('fonts/JetExplorer.svg') format('svg'); */
+  src:  url('fonts/JetExplorer.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="jetex-"], [class*=" jetex-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'JetExplorer' !important;
+  font-size: 2em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jetex-social_google:before {
+  content: "\e932";
+}
+.jetex-social_facebook:before {
+  content: "\e940";
+}
+.jetex-cabin:before {
+  content: "\e944";
+}
+.jetex-church:before {
+  content: "\e945";
+}
+.jetex-best-experience:before {
+  content: "\e910";
+}
+.jetex-compass-fulfill:before {
+  content: "\e911";
+}
+.jetex-compass:before {
+  content: "\e92b";
+}
+.jetex-money:before {
+  content: "\e92c";
+}
+.jetex-user-circle-fulfill:before {
+  content: "\e941";
+}
+.jetex-user-circle:before {
+  content: "\e942";
+}
+.jetex-check:before {
+  content: "\e947";
+}
+.jetex-minus:before {
+  content: "\e946";
+}
+.jetex-plus:before {
+  content: "\e948";
+}
+.jetex-user-fulfill:before {
+  content: "\e929";
+}
+.jetex-user:before {
+  content: "\e92a";
+}
+.jetex-passengers:before {
+  content: "\e91b";
+}
+.jetex-adult-fulfill:before {
+  content: "\e900";
+}
+.jetex-adult:before {
+  content: "\e901";
+}
+.jetex-child-fulfill:before {
+  content: "\e90d";
+}
+.jetex-child:before {
+  content: "\e90e";
+}
+.jetex-baby-fulfill:before {
+  content: "\e902";
+}
+.jetex-baby:before {
+  content: "\e903";
+}
+.jetex-bed-fulfill:before {
+  content: "\e904";
+}
+.jetex-bed:before {
+  content: "\e905";
+}
+.jetex-checkbox-btn:before {
+  content: "\e906";
+}
+.jetex-checkbox-selected-btn:before {
+  content: "\e907";
+}
+.jetex-radio-btn:before {
+  content: "\e922";
+}
+.jetex-radio-selected-btn:before {
+  content: "\e923";
+}
+.jetex-checkin-fulfill:before {
+  content: "\e908";
+}
+.jetex-checkin:before {
+  content: "\e909";
+}
+.jetex-checkout-fulfill:before {
+  content: "\e90a";
+}
+.jetex-checkout:before {
+  content: "\e90b";
+}
+.jetex-burger-menu:before {
+  content: "\e93f";
+}
+.jetex-trash-bin:before {
+  content: "\e93e";
+}
+.jetex-chevron-left:before {
+  content: "\e90c";
+}
+.jetex-chevron-right:before {
+  content: "\e93d";
+}
+.jetex-cross:before {
+  content: "\e912";
+}
+.jetex-long-arrow-right:before {
+  content: "\e917";
+}
+.jetex-exchange:before {
+  content: "\e913";
+}
+.jetex-filter-fulfill:before {
+  content: "\e914";
+}
+.jetex-filter:before {
+  content: "\e915";
+}
+.jetex-clock:before {
+  content: "\e90f";
+}
+.jetex-history:before {
+  content: "\e916";
+}
+.jetex-history-fulfill:before {
+  content: "\e92d";
+}
+.jetex-maginifier:before {
+  content: "\e918";
+}
+.jetex-map-fulfill:before {
+  content: "\e919";
+}
+.jetex-map:before {
+  content: "\e91a";
+}
+.jetex-pin-fulfill:before {
+  content: "\e91c";
+}
+.jetex-pin:before {
+  content: "\e91d";
+}
+.jetex-plane-fulfill:before {
+  content: "\e91e";
+}
+.jetex-plane-horizontal-fulfill:before {
+  content: "\e91f";
+}
+.jetex-plane-horizontal:before {
+  content: "\e920";
+}
+.jetex-plane:before {
+  content: "\e921";
+}
+.jetex-sliders:before {
+  content: "\e924";
+}
+.jetex-sort-desc-fulfill:before {
+  content: "\e925";
+}
+.jetex-sort-desc:before {
+  content: "\e926";
+}
+.jetex-star-fulfill:before {
+  content: "\e927";
+}
+.jetex-star-half-fulfill:before {
+  content: "\e928";
+}
+.jetex-amenities_casino:before {
+  content: "\e943";
+}
+.jetex-amenities_24-hours-front-desk:before {
+  content: "\e92e";
+}
+.jetex-amenities_ATM-card:before {
+  content: "\e92f";
+}
+.jetex-amenities_breakfast:before {
+  content: "\e930";
+}
+.jetex-amenities_car:before {
+  content: "\e931";
+}
+.jetex-amenities_child-care:before {
+  content: "\e933";
+}
+.jetex-amenities_coffee:before {
+  content: "\e934";
+}
+.jetex-amenities_elevator:before {
+  content: "\e935";
+}
+.jetex-amenities_gym:before {
+  content: "\e936";
+}
+.jetex-amenities_hair-salon:before {
+  content: "\e937";
+}
+.jetex-amenities_laundry:before {
+  content: "\e938";
+}
+.jetex-amenities_luggage:before {
+  content: "\e939";
+}
+.jetex-amenities_pool:before {
+  content: "\e93a";
+}
+.jetex-amenities_spa:before {
+  content: "\e93b";
+}
+.jetex-amenities_wifi:before {
+  content: "\e93c";
+}
+
