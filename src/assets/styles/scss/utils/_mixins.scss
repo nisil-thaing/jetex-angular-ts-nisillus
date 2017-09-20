@@ -310,7 +310,7 @@ $border) {
 
 //$breakpoints: (
 //        'small' : (max-width: 479px),
-//        'medium': (max-width: 767px),
+//        'medium': (max-width: 575px),
 //        'large': (max-width: 991px),
 //        'huge': (max-width: 1199px),
 //);
@@ -325,7 +325,7 @@ $border) {
     }
   }
   @if $breakpoint=="medium" {
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
       @content;
     }
   }
