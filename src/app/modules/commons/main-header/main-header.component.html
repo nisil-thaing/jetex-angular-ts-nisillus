@@ -1,4 +1,4 @@
-<header class="sticky-navigation navbar fixed-top is-fixed is-visible">
+<header class="sticky-navigation navbar fixed-top" [ngClass]="{ 'is-fixed': stickyHeaderState.isFixed, 'is-visible': stickyHeaderState.isVisibled }">
   <div class="container">
     <div class="float-sm-left navbar-header">
       <ul class="float-right mobile-menu d-block d-sm-none">
