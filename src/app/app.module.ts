@@ -10,6 +10,7 @@ import { MainHeaderComponent, MainContentComponent } from './modules/commons/ind
 import { HomePageComponent } from './modules/home-page/index';
 import { HotelsSearchComponent } from './modules/hotels/index';
 import { FlightsSearchComponent } from './modules/flights/index';
+import { SearchHistoriesComponent } from './modules/search-histories/index';
 import { PageNotFoundComponent } from './modules/page-not-found/index';
 
 @NgModule({
@@ -19,12 +20,13 @@ import { PageNotFoundComponent } from './modules/page-not-found/index';
     MainContentComponent,
     HotelsSearchComponent,
     FlightsSearchComponent,
+    SearchHistoriesComponent,
     HomePageComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routesConfig, { useHash: false })
+    RouterModule.forRoot(routesConfig, { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -22,12 +22,14 @@
         "../node_modules/bootstrap/scss/bootstrap.scss",
         "../node_modules/animate.css/animate.min.css",
         "assets/vendors/iconset/JetExplorer/style.css",
-        "assets/styles/scss/index.scss"
+        "assets/styles/scss/index.scss",
+        "libraries/pace/themes/red/pace-theme-minimal.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/popper.js/dist/umd/popper.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "libraries/pace/pace.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

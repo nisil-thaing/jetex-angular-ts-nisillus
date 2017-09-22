@@ -2,7 +2,7 @@
   <div class="container">
     <div class="float-sm-left navbar-header">
       <ul class="float-right mobile-menu d-block d-sm-none">
-        <li>
+        <li [routerLink]="['/search-histories']">
           <a class="has-icon"><i class="jetex-history"></i></a>
         </li>
 
@@ -28,7 +28,7 @@
     </div>
     <nav id="userMenuCollapse" class="d-sm-block collapse navbar-collapse">
       <ul class="d-sm-block float-sm-right nav navbar-nav navbar-right">
-        <li class="d-none d-sm-block float-sm-left">
+        <li class="d-none d-sm-block float-sm-left" [routerLink]="['/search-histories']">
           <a role="button">Search History</a>
         </li>
         <li class="float-sm-left">
