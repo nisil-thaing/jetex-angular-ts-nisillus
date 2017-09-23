@@ -18,7 +18,7 @@ class MainHeaderComponent implements OnInit, OnDestroy {
   private stickyHeaderState: stickyHeaderStateLayout = {
     isFixed: true,
     isVisibled: true,
-    previousTop: 0,
+    previousTop: 70,
     headerEle: undefined,
     headerHeight: 0,
     contentEle: undefined,
@@ -44,7 +44,7 @@ class MainHeaderComponent implements OnInit, OnDestroy {
 
       if (currentTop < this.stickyHeaderState.previousTop) {
         // scrolling up
-        if (currentTop > 0 && this.stickyHeaderState.headerEle.hasClass('is-fixed')) {
+        if (currentTop > 70 && this.stickyHeaderState.headerEle.hasClass('is-fixed')) {
           if (!this.stickyHeaderState.contentEle.hasClass('header-is-visible')) {
             this.stickyHeaderState.contentEle.addClass('header-is-visible');
           }
@@ -63,7 +63,7 @@ class MainHeaderComponent implements OnInit, OnDestroy {
           }
         }
       } else {
-        // scrolling dow
+        // scrolling down
         if (this.stickyHeaderState.contentEle.hasClass('header-is-visible')) {
           this.stickyHeaderState.contentEle.removeClass('header-is-visible');
         }
@@ -81,7 +81,7 @@ class MainHeaderComponent implements OnInit, OnDestroy {
       }
     }
 
-    this.stickyHeaderState.previousTop = currentTop;
+    this.stickyHeaderState.previousTop = currentTop >= 70 ? currentTop : 70;
   }
 }
 

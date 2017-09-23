@@ -6,9 +6,9 @@
 @import 'base/typography';
 @import 'base/base';
 
-// pages/search-page
+@import 'pages/home-page';
 // pages/hotel-search
-// pages/flight-search
+// @import 'pages/flights-search';
 // pages/admin
 // pages/hotel-details
 // pages/flight
@@ -36,6 +36,7 @@
 
 @import 'layouts/header';
 // @import 'layouts/footer';
+@import 'layouts/mosaic';
 // @import 'layouts/card';
 // @import 'layouts/flight-card';
 // @import 'layouts/images-slider';

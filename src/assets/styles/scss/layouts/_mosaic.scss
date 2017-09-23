@@ -1,0 +1,109 @@
+.mosaic-wrap {
+  background-color: $colorH;
+  overflow: hidden;
+  .title-des-top {
+    text-align: center;
+    margin: 70px;
+    @media (max-width: 767px) {
+      margin: 40px;
+    }
+    h1 {
+      color: $colorA;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  .mosaic-des-top {
+    margin-bottom: 40px;
+    overflow-x: hidden;
+    .item {
+      cursor: pointer;
+      padding: 0px;
+      background-size: cover !important;
+      background-position: center center !important;
+      border-left: 1px solid $colorG;
+      border-bottom: 1px solid $colorG;
+      &:after {
+        content: '\A';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+      }
+      @media(min-width: 992px) {
+        &:hover {
+          &:after {
+            content: '\A';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 1;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+          }
+        }
+      }
+      .content-city-name {
+        padding: 15px 0px 0px 15px;
+        color: white;
+        position: absolute;
+        z-index: 10;
+        h3 {
+          font-weight: bold;
+          @media (max-width: 767px) {
+            font-size: 18px;
+          }
+        }
+      }
+      .content-price {
+        position: absolute;
+        z-index: 10;
+        padding-top: 40px;
+        padding-left: 15px;
+        @media (max-width: 767px) {
+          padding-top: 32px;
+        }
+        span {
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {}
+  @media (min-width: 992px) {}
+  @media (min-width: 768px) {}
+  @media (min-width: 576px) {}
+  @media (max-width: 1199px) {
+    @media (min-width: 992px) {}
+    @media (min-width: 768px) {}
+    @media (min-width: 576px) {}
+  }
+  @media (max-width: 991px) {
+    .mosaic-des-top {
+      margin-top: 0px;
+      margin-bottom: 60px;
+      max-width: 100%;
+    }
+    @media (min-width: 768px) {}
+    @media (min-width: 576px) {}
+  }
+  @media (max-width: 767px) {
+    .mosaic-des-top {
+      // max-width: unset;
+      padding: 0px;
+      margin-top: 0px;
+      margin-left: -1px;
+    }
+    @media (min-width: 576px) {}
+  }
+  @media (max-width: 575px) {}
+}

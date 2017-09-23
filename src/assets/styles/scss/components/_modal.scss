@@ -3,7 +3,7 @@
     padding-right: 0 !important;
   }
   .modal-dialog {
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
       margin: 0;
     }
     .modal-content {
@@ -22,7 +22,7 @@
     }
   }
   .modal-body {
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       padding: 30px;
     }
     .error-notice {
