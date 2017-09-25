@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { MainHeaderComponent, MainContentComponent } from './modules/commons/index';
 
 import { HomePageComponent } from './modules/home-page/index';
-import { AdsBannerComponent, HeroProfileComponent, HeroJobAdsComponent, AdsHostDirective } from './modules/ads-banner/index';
+import { AdsBannerComponent, /* HeroProfileComponent, HeroJobAdsComponent */JetExMobileAdsComponent, AdsHostDirective } from './modules/ads-banner/index';
 /* import { HotelsSearchComponent } from './modules/hotels/index';
 import { FlightsSearchComponent } from './modules/flights/index'; */
 import { SearchHistoriesComponent } from './modules/search-histories/index';
@@ -25,14 +25,16 @@ import { AdsService } from './modules/ads-banner/services/ads.service';
     SearchHistoriesComponent,
     HomePageComponent,
     AdsBannerComponent,
-    HeroJobAdsComponent,
-    HeroProfileComponent,
+    /* HeroJobAdsComponent,
+    HeroProfileComponent, */
+    JetExMobileAdsComponent,
     AdsHostDirective,
     PageNotFoundComponent
   ],
   entryComponents: [
-    HeroProfileComponent,
-    HeroJobAdsComponent    
+    /* HeroProfileComponent,
+    HeroJobAdsComponent, */
+    JetExMobileAdsComponent
   ],
   imports: [
     BrowserModule,

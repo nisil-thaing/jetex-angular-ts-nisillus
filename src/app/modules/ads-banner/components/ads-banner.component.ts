@@ -19,7 +19,7 @@ class AdsBannerComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loadAdsComponent();
-    this.getAds();
+    // this.getAds();
   }
 
   ngOnDestroy() {

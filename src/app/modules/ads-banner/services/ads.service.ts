@@ -1,13 +1,22 @@
 import { Injectable } from '@angular/core';
 
-import { HeroJobAdsComponent } from '../components/hero-job-ads.component';
-import { HeroProfileComponent } from '../components/hero-profile.component';
+/* import { HeroJobAdsComponent } from '../components/hero-job-ads.component';
+import { HeroProfileComponent } from '../components/hero-profile.component'; */
+import { JetExMobileAdsComponent } from '../components/jetex-mobile-ads.component';
 import { AdsItem } from './ads-item';
 
 @Injectable()
 class AdsService {
   getAds = () : Array<AdsItem> => {
-    return [{
+    return [
+      {
+        component: JetExMobileAdsComponent,
+        data: {
+          name: 'Bombasto',
+          bio: 'Brave as they come'
+        }
+      },
+      /* {
         component: HeroProfileComponent,
         data: {
           name: 'Bombasto',
@@ -34,7 +43,7 @@ class AdsService {
           headline: 'Openings in all departments',
           body: 'Apply today'
         }
-      },
+      }, */
     ];
   }
 }
