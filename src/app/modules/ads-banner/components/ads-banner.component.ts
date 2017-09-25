@@ -32,10 +32,8 @@ class AdsBannerComponent implements OnInit, OnDestroy {
 
     let componentFactory = this._componentFactoryResolver.resolveComponentFactory(adsItem.component);
 
-    let viewContainerRef = this.adsHost._viewContainerRef;
-    viewContainerRef.clear();
-
-    let componentRef = viewContainerRef.createComponent(componentFactory);
+    this.adsHost.destroyAllViews();
+    let componentRef = this.adsHost.createComponent(componentFactory);
     (<AdsComponent>componentRef.instance).data = adsItem.data;
   }
 
