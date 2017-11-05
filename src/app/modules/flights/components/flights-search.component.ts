@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
 })
 class FlightsSearchComponent {}
 
-export { FlightsSearchComponent }
+export { FlightsSearchComponent };

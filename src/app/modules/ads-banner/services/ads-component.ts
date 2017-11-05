@@ -1,5 +1,5 @@
 interface AdsComponent {
-  data: any
+  data: any;
 }
 
 export { AdsComponent };

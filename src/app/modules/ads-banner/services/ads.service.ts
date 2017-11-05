@@ -5,7 +5,7 @@ import { AdsItem } from './ads-item';
 
 @Injectable()
 class AdsService {
-  getAds = () : Array<AdsItem> => {
+  getAds = (): Array<AdsItem> => {
     return [
       {
         component: JetExMobileAdsComponent,

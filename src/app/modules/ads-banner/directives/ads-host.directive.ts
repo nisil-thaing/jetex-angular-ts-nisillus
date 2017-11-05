@@ -1,6 +1,7 @@
 import { Directive, ViewContainerRef, ComponentFactory, ComponentRef } from '@angular/core';
 
 @Directive({
+  // tslint:disable-next-line:directive-selector
   selector: '[ads-host]'
 })
 class AdsHostDirective {

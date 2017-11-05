@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
 })
 class HotelsSearchComponent {}
 
-export { HotelsSearchComponent }
+export { HotelsSearchComponent };

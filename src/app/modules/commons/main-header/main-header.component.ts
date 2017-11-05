@@ -1,21 +1,21 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as jQuery from 'jQuery';
 
-interface stickyHeaderStateLayout {
-  isFixed: boolean,
-  isVisibled: boolean,
-  previousTop: number,
-  headerEle: any,
-  headerHeight: number,
-  contentEle: any
+interface StickyHeaderStateLayout {
+  isFixed: boolean;
+  isVisibled: boolean;
+  previousTop: number;
+  headerEle: any;
+  headerHeight: number;
+  contentEle: any;
 }
 
 @Component({
-  selector: 'main-header',
+  selector: 'app-main-header',
   templateUrl: './main-header.component.html'
 })
 class MainHeaderComponent implements OnInit, OnDestroy {
-  private stickyHeaderState: stickyHeaderStateLayout = {
+  private stickyHeaderState: StickyHeaderStateLayout = {
     isFixed: true,
     isVisibled: true,
     previousTop: 70,
@@ -36,7 +36,7 @@ class MainHeaderComponent implements OnInit, OnDestroy {
   }
 
   onWindowScrollingHandle = () => {
-    let currentTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const currentTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     // check if user is scrolling up
     if (this.stickyHeaderState.headerEle.length > 0 && this.stickyHeaderState.contentEle.length > 0) {

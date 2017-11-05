@@ -5,13 +5,14 @@ import { AdsItem } from '../services/ads-item';
 import { AdsComponent } from '../services/ads-component';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'ads-banner',
   templateUrl: '../templates/ads-banner.component.html'
 })
 class AdsBannerComponent implements OnInit, OnDestroy {
   @Input() ads: Array<AdsItem>;
   @ViewChild(AdsHostDirective) adsHost: AdsHostDirective;
-  currentAdsIndex: number = -1;
+  currentAdsIndex = -1;
   subscription: any;
   interval: any;
 
@@ -28,12 +29,12 @@ class AdsBannerComponent implements OnInit, OnDestroy {
 
   loadAdsComponent = () => {
     this.currentAdsIndex = (this.currentAdsIndex + 1) % this.ads.length;
-    let adsItem = this.ads[this.currentAdsIndex];
+    const adsItem = this.ads[this.currentAdsIndex];
 
-    let componentFactory = this._componentFactoryResolver.resolveComponentFactory(adsItem.component);
+    const componentFactory = this._componentFactoryResolver.resolveComponentFactory(adsItem.component);
 
     this.adsHost.destroyAllViews();
-    let componentRef = this.adsHost.createComponent(componentFactory);
+    const componentRef = this.adsHost.createComponent(componentFactory);
     (<AdsComponent>componentRef.instance).data = adsItem.data;
   }
 

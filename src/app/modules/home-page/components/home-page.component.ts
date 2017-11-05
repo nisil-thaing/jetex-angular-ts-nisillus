@@ -11,7 +11,20 @@ import debounce from 'lodash/debounce';
 })
 class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   ads: Array<AdsItem> = [];
-  title: string = "Ngan, I still love you!";
+  title = 'Ngan, I still loving you!';
+
+  calculateMosaicSize = debounce(() => {
+    const mosaicItemObjects: any = $('.mosaic-des-top .item');
+    let objectSmallHeight: number;
+
+    mosaicItemObjects.each((index, item) => {
+      if (objectSmallHeight === undefined && $(item).hasClass('small')) {
+        objectSmallHeight = $(item).width();
+      }
+    });
+
+    mosaicItemObjects.css('height', objectSmallHeight + 'px');
+  }, 500);
 
   constructor(private _adsService: AdsService) {}
 
@@ -27,19 +40,6 @@ class HomePageComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnDestroy() {
     $(window).off('resize');
   }
-
-  calculateMosaicSize = debounce(() => {
-    let mosaicItemObjects: any = $(".mosaic-des-top .item");
-    let objectSmallHeight: number = undefined;
-
-    mosaicItemObjects.each((index, item) => {
-      if (objectSmallHeight === undefined && $(item).hasClass('small')) {
-        objectSmallHeight = $(item).width();
-      }
-    });
-
-    mosaicItemObjects.css("height", objectSmallHeight + "px");    
-  }, 500);
 }
 
-export { HomePageComponent }
+export { HomePageComponent };
