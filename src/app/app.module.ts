@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { routesConfig } from './modules/configs/index';
 
 import { AppComponent } from './app.component';
-import { MainHeaderComponent, MainContentComponent } from './modules/commons/index';
+import { MainHeaderComponent, MainContentComponent, MainFooterComponent } from './modules/commons/index';
 
 import { HomePageComponent } from './modules/home-page/index';
 import { AdsBannerComponent, JetExMobileAdsComponent, AdsHostDirective } from './modules/ads-banner/index';
@@ -18,6 +18,7 @@ import { AdsService } from './modules/ads-banner/services/ads.service';
     AppComponent,
     MainHeaderComponent,
     MainContentComponent,
+    MainFooterComponent,
     /* HotelsSearchComponent,
     FlightsSearchComponent, */
     SearchHistoriesComponent,
